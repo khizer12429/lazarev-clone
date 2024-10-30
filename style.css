@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: myfont;
+    src: url(gilroy/Gilroy-Thin.ttf);
+}
+@font-face{
+    font-family: myfont2;
+    src: url(gilroy/Gilroy-Black.ttf);
+}
+@font-face{
+    font-family: myfont3;
+    src: url(gilroy/Gilroy-Bold.ttf);
+}
+body{
+    font-family: myfont3;
+    height: 100%;
+    width: 100%;
+}
+/* section1 */
+.section1{
+    background-color: #111111;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+.section1 nav{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 2vw 11vw;
+    align-items: center ;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    background-color: #111111;
+    height: 4vw;
+}
+/*  */
+/* border-bottom */
+.section1 #navbars{
+    padding: 2vw 0;
+    width: 78vw;
+    margin-left: 11vw;
+    margin-right: 11vw;
+    position: fixed;
+    transition: border-bottom 0.6s ease;
+    z-index: 3;
+}
+
+.section1 nav h3{
+    font-family: myfont;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.section1 nav h3:hover{
+    color: rgb(33, 158, 70);
+}
+.section1 .nav2{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.section1 nav h2{
+    color: white;
+    font-family: myfont2;
+    font-size: 1.5vw;
+}
+.section1 .nav2 h3{
+    font-size: 0.9vw;
+    font-family: myfont3;
+} 
+.section1 .nav2 button{
+    color: white;
+    width: 9vw;
+    padding: 0.6vw 0.7vw;
+    border-radius: 2vw; 
+    border: none;
+    font-weight: bolder;
+    font-size: 0.7vw;
+    position: relative;
+    display: flex;
+    background: linear-gradient(to right, #111111 30%, rgb(33, 158, 70) 50%);
+    background-size: 200% 100%;
+    background-position: right;
+    transition: background-position 0.5s ease-out; 
+    cursor: pointer;
+}
+ .section1 .nav2 button:hover{
+    background-position: left;
+    background-color: #111111;
+}
+.section1 .nav2 button h2:hover{
+    color: green;
+}
+.section1 .nav2 button h2{
+    font-size: 1vw;
+    font-family: myfont3; 
+}
+.section1 .nav2 button svg{
+    position: absolute;
+    top: 25%;   
+    height: 1vw;
+    width: 1vw;
+    right: 7%;
+}
+/* nav-bottom */
+.section1 .nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10vw;
+}
+/* nav-bottom-top */
+.section1 .nav-bottom .nav-bottom-top {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.24vw;
+}
+.section1 .nav-bottom .nav-bottom-top p{
+    font-size: 1.1vw;
+    padding: 1vw 0;
+}
+.section1 .nav-bottom .nav-bottom-top span{
+    color: rgb(167, 150, 150);
+    font-size: 1.1vw;
+    
+}
+.section1 .nav-bottom .nav-bottom-top .light{
+    color: rgb(88, 81, 81);
+    font-size: 1.1vw;
+}
+/* nav-bottom-middle */
+.section1 .nav-bottom .nav-bottom-middle h2 {
+    font-size: 5.5vw;
+    color: white;
+    padding: 0;
+    line-height: 6vw;
+}
+/* nav-bottom-end */
+.section1 .nav-bottom .nav-bottom-end p {
+    font-size: 1.2vw;
+    color: white;
+    padding: 2vw 0;
+    font-family: myfont;
+    font-weight: bolder;
+}
+.section1 .nav-bottom .nav-bottom-end span {
+    color: #0CC05A;
+    font-family: myfont;
+    font-weight: bolder;
+    font-size: 1vw;
+    background-color: #102017;
+    border-radius: 2vw;
+    padding: 0.2vw 0.5vw;
+    border: 0.1px solid#0CC05A;
+}
+.section1 .section1-video {
+    height: 43vw;
+    width: 80%;
+    padding-top: 5vw;
+}
+.section1 .section1-video video{
+    height: 100%;
+    width: 100%;
+    border-radius: 1vw;
+    object-fit: cover; 
+    cursor: pointer;
+}
+/* section2 */
+.section2{
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    position: relative;
+    z-index: 2;
+    padding: 8vw 0;
+}
+.section2 .section2-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0.5vw;
+}
+.section2 .section2-top .container1{
+    background-color: #1F1F1F;
+    height: 22vw;
+    width: 25.5vw;
+    border-radius: 1.5vw;
+}
+.section2 .section2-top .container1 h4{
+    padding: 2.5vw 1.5vw;
+    color: #4D4D4D;
+    font-size: 1vw;
+}
+.section2 .section2-top .container1 h1{
+    margin-top: 7vw;
+    padding-left: 1.5vw;
+    font-size: 3.5vw;
+}
+.section2 .section2-top .container1 p{
+    padding-left: 1.5vw;
+    font-family: myfont;
+    font-weight: bolder;
+    width: 11vw;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.651);
+}
+/* section2-container2 */
+.section2 .section2-top .container2{
+    position: relative;
+    background-color: #1F1F1F;
+    height: 22vw;
+    width: 26vw;
+    border-radius: 1.5vw;
+    
+}
+.section2 .section2-top .container2 img{
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    top: -11%;
+    right: 5%;
+    object-fit: cover;
+    transform: rotate(1deg);
+}
+.section2 .section2-top .container2 h4{
+    padding: 2.5vw 1.5vw;
+    color: #4D4D4D;
+    font-size: 1vw;
+}
+.section2 .section2-top .container2 h1{
+    margin-top: 7vw;
+    padding-left: 1.5vw;
+    font-size: 3.5vw;
+    color: white;
+}
+.section2 .section2-top .container2 p{
+    padding-left: 1.5vw;
+    font-family: myfont;
+    font-weight: bolder;
+    width: 10vw;
+    font-size: 1vw;
+    color: rgba(255, 255, 255, 0.651);
+}
+/* section2-bottom */
+.section2 .section2-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+    width: 100%;
+    height: 100%;
+}
+.section2 .section2-bottom .container4{
+    background-color: #1F1F1F;
+    height: 21vw;
+    width: 39vw;
+    border-radius: 1.5vw;
+}
+.section2 .section2-bottom .container4 h4{
+    padding: 2.5vw 1.5vw;
+    color: #4D4D4D;
+    font-size: 1vw;
+}
+.section2 .section2-bottom .container4 h1{
+    margin-top: 7vw;
+    padding-left: 1.5vw;
+    font-size: 2.7vw;
+    color: white;
+}
+.section2 .section2-bottom .container4 p{
+    padding-left: 1.5vw;
+    font-family: myfont;
+    font-weight: bolder;
+    width: 24vw;
+    font-size: 1.1vw;
+    color: rgba(255, 255, 255, 0.651);
+}
+/* */
+/* section3 */
+.section3{
+    min-height: 90vh;
+    width: 100%;
+    background: linear-gradient(312deg, #342F6C 0%, #4F5BFF 0.01%, #0B0E40 99.16%);
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+.section3 .section3-image{
+    height: 65%;
+    width: 39vw;
+    position: absolute;
+    top: -50%;
+    margin-left: -10vw;
+}
+.section3 .section3-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: hard-light;
+    transition: transform 0.5s ease;
+}
+.section3 .section3-image2{
+    height: 100%;
+    width: 102%;
+    transition: transform 0.5s ease;
+    position: absolute;
+    top: -35%;
+    margin-left: -2vw;
+}
+.section3 .section3-image2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.section3 .section3-text{
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+}
+.section3 .section3-text h1{
+    font-size: 5.8vw;
+    font-weight: lighter;
+    text-align: center;
+}
+.section3 .section3-text p{
+    font-size: 1.3vw;
+    line-height: 1.5;
+    margin-top: 1vw;
+    text-align: center;
+    font-weight: bolder;
+    font-family: myfont;
+}
+.section3 .section3-text span{
+    font-size: 1.3vw;
+    font-family: myfont;
+    text-align: center;
+    font-weight: bolder;
+    justify-content: center;
+    display: flex;
+}
+.section3 .section3-text .section3-tex p{
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 2.5vw;
+}
+.section3 .section3-button {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.section3 .section3-button button{
+    padding: 1.5vw 2vw;
+    font-weight: bolder;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9vw;
+}
+/* section4 */
+/*  */
+.section4{
+    height: 100%;
+    width: 100%;
+    background-color: #111111;
+    position: relative;
+    z-index: 4;
+}
+.section4 .section4-top{
+    padding: 0 9vw;
+    padding-top: 7vw;
+}
+.section4 .section4-top p{
+    font-size: 2vw;
+    color: white;
+    font-family: myfont;
+    font-weight: 900;
+    width: 65vw;
+    line-height: 2.5vw;
+}
+.section4 .section4-bottom{
+    display: flex;
+    padding: 0 8vw;
+    gap: 2vw;
+}
+/* bottom0-colum1 */
+.section4 .section4-colum1 .colum1-1{
+    margin-top: 5vw;
+}
+.section4 .section4-colum1 svg{
+    margin-bottom: 0.8vw;
+    height: 2vw;
+}
+.section4 .section4-colum1 p{
+    font-size: 1vw;
+    color: white;
+    font-family: myfont;
+    font-weight: 500;
+    width: 28vw;
+}
+.section4 .section4-colum1 img{
+    height: 2vw;
+    margin-bottom: 0.8vw;
+}
+/* bottom0-colum2 */
+.section4 .section4-colum2 .colum2-2{
+    margin-top: 6.5vw;
+}
+.section4 .section4-colum2 svg{
+    margin-bottom: 0.8vw;
+    height: 2vw;
+}
+.section4 .section4-colum2 p{
+    font-size: 1vw;
+    color: white;
+    font-family: myfont;
+    font-weight: 500;
+    width: 27vw;
+}
+.section4 .section4-colum2 img{
+    margin-bottom: 0.8vw;
+    height: 2vw;
+}
+/* bottom0-colum3 */
+.section4 .section4-colum3 .colum3-3{
+    margin-top: 6vw;
+}
+.section4 .section4-colum3 svg{
+    margin-bottom: 0.8vw;
+    height: 2vw;
+}
+.section4 .section4-colum3 p{
+    font-size: 1vw;
+    color: white;
+    font-family: myfont;
+    font-weight: 500;
+    width: 26vw;
+}
+.section4 .section4-colum3 img{
+    margin-bottom: 0.8vw;
+    height: 2vw;
+}
+.section4 .section4-bottom-last{
+    margin-top: 2vw;
+    padding: 0 8vw;
+}
+.section4 .section4-bottom-last button{
+    padding: 1.2vw 0; 
+    background-color: #0CC05A;
+    width: 80vw;
+    border-radius: 10vw;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ease;
+    font-weight: bolder;
+    font-size: 0.8vw;
+}
+.section4 .section4-bottom-last button:hover{
+    background-color: white;
+    transition: 0.5s ease;
+    color: black;
+}
